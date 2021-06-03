@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Roboto+Mono:wght@700&display=swap');
+
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: Black;
+    font-size: 40pt;
+}
+.face {
+    height: 200px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+.background {
+    background-color: black;
+    color: white;
+    margin: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 24pt;
+    padding-top: 100px;
+}
+
+.nav_button, .nav_button:visited, .nav_button:focus, .nav_button:link{
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.nav_button:hover {
+    animation-name: changecolor;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes changecolor {
+    from {
+        background-color: black;
+        color: white;
+    }
+    to {
+        background-color: white;
+        color:black;
+    }
+}
